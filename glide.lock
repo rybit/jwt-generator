@@ -1,0 +1,12 @@
+hash: 783c17ec5377583c86d0a1fe7af47de68de1c351e646277b97b18c9326f17cb7
+updated: 2016-10-06T16:08:18.941268572-07:00
+imports:
+- name: github.com/dgrijalva/jwt-go
+  version: d2709f9f1f31ebcda9651b03077758c1f3a0018c
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/spf13/cobra
+  version: 9c28e4bbd74e5c3ed7aacbc552b2cab7cfdfe744
+- name: github.com/spf13/pflag
+  version: b83537d79690b75cac5e021b036ae16792bf0f20
+testImports: []
