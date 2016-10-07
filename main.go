@@ -5,6 +5,8 @@ import (
 
 	"fmt"
 
+	"time"
+
 	"github.com/dgrijalva/jwt-go"
 	"github.com/spf13/cobra"
 )
@@ -65,6 +67,7 @@ func generate(cmd *cobra.Command, args []string) {
 		Email:  email,
 		Groups: groups,
 	}
+	claims.ExpiresAt = time.Now().Add(1000 * time.Hour).Unix()
 
 	result, err := jwt.NewWithClaims(jwt.SigningMethodHS256, claims).SignedString([]byte(secret))
 	if err != nil {
